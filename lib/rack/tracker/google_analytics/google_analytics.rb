@@ -1,6 +1,6 @@
 class Rack::Tracker::GoogleAnalytics < Rack::Tracker::Handler
 
-  self.allowed_tracker_options = [:cookie_domain, :user_id]
+  self.allowed_tracker_options = [:cookie_domain, :user_id, :name]
 
   class Send < OpenStruct
     def initialize(attrs = {})
